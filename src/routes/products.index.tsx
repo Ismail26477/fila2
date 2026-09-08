@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Search } from "lucide-react";
 import { useMemo, useState } from "react";
-import bannerProducts from "@/assets/banner-products.jpg";
-import ctaProducts from "@/assets/cta-products.jpg";
+import bannerProducts from "@/assets/banner-products.webp";
+import ctaProducts from "@/assets/cta-products.webp";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { PageBanner } from "@/components/site/PageBanner";
 import { ProductCard } from "@/components/site/ProductCard";

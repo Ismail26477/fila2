@@ -1,9 +1,9 @@
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
-import hero1 from "@/assets/hero-1-plant.jpg";
-import hero2 from "@/assets/hero-2-qc.jpg";
-import hero3 from "@/assets/hero-3-glassware.jpg";
-import hero4 from "@/assets/hero-4-facility.jpg";
+import hero1 from "@/assets/hero-1-plant.webp";
+import hero2 from "@/assets/hero-2-qc.webp";
+import hero3 from "@/assets/hero-3-glassware.webp";
+import hero4 from "@/assets/hero-4-facility.webp";
 import { ButtonLink } from "./Button";
 
 const slides = [
@@ -74,6 +74,8 @@ export function HeroSlider() {
               src={slide.image}
               alt={slide.alt}
               loading={index === 0 ? "eager" : "lazy"}
+              fetchPriority={index === 0 ? "high" : "low"}
+              decoding="async"
               width={1920}
               height={1080}
               className="size-full object-cover"

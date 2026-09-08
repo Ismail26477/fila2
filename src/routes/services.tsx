@@ -1,10 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
-import bannerServices from "@/assets/banner-services.jpg";
-import ctaServices from "@/assets/cta-services.jpg";
-import service1 from "@/assets/service-1.jpg";
-import service2 from "@/assets/service-2.jpg";
-import service3 from "@/assets/service-3.jpg";
-import service4 from "@/assets/service-4.jpg";
+import bannerServices from "@/assets/banner-services.webp";
+import ctaServices from "@/assets/cta-services.webp";
+import service1 from "@/assets/service-1.webp";
+import service2 from "@/assets/service-2.webp";
+import service3 from "@/assets/service-3.webp";
+import service4 from "@/assets/service-4.webp";
 import { ButtonLink } from "@/components/site/Button";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { Faq } from "@/components/site/Faq";

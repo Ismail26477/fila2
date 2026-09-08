@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Beaker, FlaskConical, ShieldCheck, Target } from "lucide-react";
-import ctaHome from "@/assets/cta-home.jpg";
-import homeAbout from "@/assets/home-about.jpg";
-import homeSupport from "@/assets/home-support.jpg";
+import ctaHome from "@/assets/cta-home.webp";
+import homeAbout from "@/assets/home-about.webp";
+import homeSupport from "@/assets/home-support.webp";
 import { ButtonLink } from "@/components/site/Button";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { HeroSlider } from "@/components/site/HeroSlider";
