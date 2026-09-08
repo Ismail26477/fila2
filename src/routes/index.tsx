@@ -288,7 +288,7 @@ function Home() {
       <Testimonials />
 
       {/* Presence */}
-      <section className="section-y bg-background">
+      <section className="section-y bg-background pt-8 md:pt-12 lg:pt-16">
         <div className="container-x">
           <Reveal className="max-w-2xl">
             <p className="eyebrow">

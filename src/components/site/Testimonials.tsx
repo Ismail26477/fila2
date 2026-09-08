@@ -94,7 +94,7 @@ export function Testimonials() {
   }, [totalSteps]);
 
   return (
-    <section className="section-y bg-surface">
+    <section className="section-y bg-surface pb-8 md:pb-12 lg:pb-16">
       <div className="container-x">
         <Reveal className="max-w-2xl">
           <p className="eyebrow">
