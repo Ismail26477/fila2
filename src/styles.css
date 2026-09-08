@@ -184,6 +184,15 @@
   background-size: 72px 72px;
 }
 
+.hero-powder-red {
+  filter: sepia(0.85) saturate(2.2) hue-rotate(305deg) brightness(0.9);
+}
+
+.hero-powder-tint {
+  background: rgb(190 24 44 / 0.22);
+  mix-blend-mode: multiply;
+}
+
 @utility image-scrim-left {
   background: linear-gradient(
     90deg,
