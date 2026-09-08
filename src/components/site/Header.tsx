@@ -34,7 +34,7 @@ export function Header() {
       <div className="container-x flex h-18 items-center justify-between gap-4 py-3 md:h-20">
         <Link to="/" className="flex min-w-0 items-center" aria-label={`${company.name} — home`}>
           <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-av0NIxQL2k1mMTTLI4RLn0no3p0QLK.png"
+            src="/filament-logo-transparent.png"
             alt={`${company.name} logo`}
             width={740}
             height={270}
