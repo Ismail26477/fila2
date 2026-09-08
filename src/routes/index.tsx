@@ -89,7 +89,7 @@ function Home() {
         <div className="pointer-events-none absolute inset-0 grid-lines-dark opacity-70" aria-hidden="true" />
         <div className="container-x relative grid items-center gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
           <Reveal className="relative">
-            <div className="relative overflow-hidden rounded-3xl">
+            <div className="overflow-hidden rounded-3xl">
               <img
                 src={homeAbout}
                 alt="Filament Lifesciences scientist in a branded lab coat inside a modern laboratory"
@@ -97,12 +97,6 @@ function Home() {
                 width={1200}
                 height={1500}
                 className="aspect-4/5 w-full object-cover"
-              />
-              <img
-                src="/filament-logo-transparent.png"
-                alt=""
-                aria-hidden="true"
-                className="pointer-events-none absolute top-[42%] left-[53%] w-20 -translate-x-1/2 -translate-y-1/2 rounded-sm bg-white/75 p-1 object-contain mix-blend-multiply sm:w-24"
               />
             </div>
             <div
@@ -284,12 +278,6 @@ function Home() {
                 width={1200}
                 height={1500}
                 className="aspect-4/5 w-full object-cover md:aspect-3/4"
-              />
-              <img
-                src="/filament-logo-transparent.png"
-                alt=""
-                aria-hidden="true"
-                className="pointer-events-none absolute top-[45%] left-[50%] w-20 -translate-x-1/2 -translate-y-1/2 rounded-sm bg-white/75 p-1 object-contain mix-blend-multiply sm:w-24"
               />
             </div>
           </Reveal>

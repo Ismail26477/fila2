@@ -95,7 +95,7 @@ function About() {
           </div>
 
           <Reveal delay={0.1} className="lg:pt-10">
-            <div className="relative overflow-hidden rounded-3xl">
+            <div className="overflow-hidden rounded-3xl">
               <img
                 src={aboutTeam}
                 alt="Two research scientists reviewing laboratory data on a monitor"
@@ -103,12 +103,6 @@ function About() {
                 width={1200}
                 height={1504}
                 className="aspect-4/5 w-full object-cover"
-              />
-              <img
-                src="/filament-logo-transparent.png"
-                alt=""
-                aria-hidden="true"
-                className="pointer-events-none absolute top-[44%] left-[50%] w-20 -translate-x-1/2 -translate-y-1/2 rounded-sm bg-white/75 p-1 object-contain mix-blend-multiply sm:w-24"
               />
             </div>
           </Reveal>
