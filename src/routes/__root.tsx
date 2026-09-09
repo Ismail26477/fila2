@@ -100,7 +100,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Filament Lifesciences Pvt Ltd" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "theme-color", content: "#00C3B0" },
+      { name: "theme-color", content: "#0057B8" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

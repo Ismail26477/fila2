@@ -93,7 +93,7 @@ export function HeroSlider() {
             </p>
             <h1 className="mt-5 text-3xl leading-[1.08] font-extrabold sm:text-5xl lg:text-6xl">
               {before}
-              <span className={index === 2 ? "text-red-500" : "text-brand-teal"}>
+              <span className="text-brand-teal">
                 {slide.highlight}
               </span>
               {after}
@@ -130,9 +130,7 @@ export function HeroSlider() {
               aria-label={`Show slide ${i + 1}`}
               aria-current={i === index}
               className={`h-1.5 rounded-full transition-all ${
-                i === index
-                  ? `w-10 ${index === 2 ? "bg-red-500" : "bg-brand-teal"}`
-                  : "w-4 bg-primary-foreground/40"
+                i === index ? "w-10 bg-brand-teal" : "w-4 bg-primary-foreground/40"
               }`}
             />
           ))}
