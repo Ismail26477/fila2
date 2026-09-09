@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Beaker, FlaskConical, ShieldCheck, Target } from "lucide-react";
-import ctaHome from "@/assets/cta-home.jpg";
-import homeAbout from "@/assets/home-about.jpg";
-import homeSupport from "@/assets/home-support.jpg";
+import ctaHome from "@/assets/cta-home.webp";
+import homeAbout from "@/assets/home-about.webp";
+import homeSupport from "@/assets/home-support.webp";
 import { ButtonLink } from "@/components/site/Button";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { HeroSlider } from "@/components/site/HeroSlider";
@@ -288,7 +288,7 @@ function Home() {
       <Testimonials />
 
       {/* Presence */}
-      <section className="section-y bg-background">
+      <section className="section-y bg-background pt-8 md:pt-12 lg:pt-16">
         <div className="container-x">
           <Reveal className="max-w-2xl">
             <p className="eyebrow">

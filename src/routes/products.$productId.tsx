@@ -1,7 +1,7 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { ButtonLink } from "@/components/site/Button";
-import ctaProducts from "@/assets/cta-products.jpg";
+import ctaProducts from "@/assets/cta-products.webp";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { ProductCard } from "@/components/site/ProductCard";
 import { Reveal } from "@/components/site/Reveal";

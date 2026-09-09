@@ -1,9 +1,9 @@
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
-import hero1 from "@/assets/hero-1-plant.jpg";
-import hero2 from "@/assets/hero-2-qc.jpg";
-import hero3 from "@/assets/hero-3-glassware.jpg";
-import hero4 from "@/assets/hero-4-facility.jpg";
+import hero1 from "@/assets/hero-1-plant.webp";
+import hero2 from "@/assets/hero-2-qc.webp";
+import hero3 from "@/assets/hero-3-glassware.webp";
+import hero4 from "@/assets/hero-4-facility.webp";
 import { ButtonLink } from "./Button";
 
 const slides = [
@@ -59,28 +59,29 @@ export function HeroSlider() {
       aria-label="Introduction"
       className="relative isolate h-[100svh] overflow-hidden bg-ink-deep text-primary-foreground"
     >
-      {/* Slides move in from the right — no cross-fade */}
-      <div className="absolute inset-0">
-        <AnimatePresence initial={false}>
-          <motion.div
-            key={index}
-            initial={reduced ? { x: 0 } : { x: "100%" }}
-            animate={{ x: 0 }}
-            exit={reduced ? { x: 0 } : { x: "-100%" }}
-            transition={{ duration: reduced ? 0 : 1, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute inset-0"
-          >
-            <img
-              src={slide.image}
-              alt={slide.alt}
-              loading={index === 0 ? "eager" : "lazy"}
-              width={1920}
-              height={1080}
-              className="size-full object-cover"
-            />
-            <div className="image-scrim-left absolute inset-0" aria-hidden="true" />
-          </motion.div>
-        </AnimatePresence>
+      {/* A continuous track keeps the next image beside the current one, so slides never fade through an empty frame. */}
+      <div className="absolute inset-0 overflow-hidden">
+        <motion.div
+          className="flex h-full w-full"
+          animate={{ x: `${index * -100}%` }}
+          transition={{ duration: reduced ? 0 : 0.9, ease: [0.22, 1, 0.36, 1] }}
+        >
+          {slides.map((item, i) => (
+            <div key={item.title} className="relative h-full min-w-full shrink-0">
+              <img
+                src={item.image}
+                alt={i === index ? item.alt : ""}
+                loading={i === 0 ? "eager" : "lazy"}
+                fetchPriority={i === 0 ? "high" : "low"}
+                decoding="async"
+                width={1920}
+                height={1080}
+                className="size-full object-cover"
+              />
+              <div className="image-scrim-left absolute inset-0" aria-hidden="true" />
+            </div>
+          ))}
+        </motion.div>
       </div>
 
       <div className="relative flex h-full items-center">
@@ -92,7 +93,9 @@ export function HeroSlider() {
             </p>
             <h1 className="mt-5 text-3xl leading-[1.08] font-extrabold sm:text-5xl lg:text-6xl">
               {before}
-              <span className="text-brand-teal">{slide.highlight}</span>
+              <span className="text-brand-teal">
+                {slide.highlight}
+              </span>
               {after}
             </h1>
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-primary-foreground/80 sm:text-lg">

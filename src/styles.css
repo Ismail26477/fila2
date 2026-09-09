@@ -6,8 +6,8 @@
 
 /*
  * FILAMENT LIFESCIENCES — design system
- * Brand palette: teal #00C3B0, deep teal ink, soft mint surfaces,
- * and white #FFFFFF.
+ * Brand palette: deep royal blue #0057B8, cyan #00B8C8,
+ * navy text #0B1F3A, and very light blue surfaces #F4F9FC.
  */
 
 @theme inline {
@@ -52,13 +52,12 @@
 :root {
   --radius: 0.875rem;
 
-  --ink: #073b45;
-  --ink-deep: #052c34;
-  --ink-muted: #39606b;
-  /* teal accent used across dark and light surfaces */
-  --brand-teal: #00c3b0;
-  --mint: #dffaf7;
-  --surface: #f1fcfa;
+  --ink: #0b1f3a;
+  --ink-deep: #0b1f3a;
+  --ink-muted: #42627e;
+  --brand-teal: #00b8c8;
+  --mint: #f4f9fc;
+  --surface: #f4f9fc;
 
   --background: #ffffff;
   --foreground: var(--ink);
@@ -66,22 +65,22 @@
   --card-foreground: var(--ink);
   --popover: #ffffff;
   --popover-foreground: var(--ink);
-  --primary: var(--ink);
+  --primary: #0057b8;
   --primary-foreground: #ffffff;
-  --secondary: #e4faf7;
-  --secondary-foreground: var(--ink);
-  --muted: #eaf9f7;
-  --muted-foreground: #55727a;
-  --accent: var(--brand-teal);
-  --accent-foreground: #043a3b;
+  --secondary: #00b8c8;
+  --secondary-foreground: #ffffff;
+  --muted: #eef7fb;
+  --muted-foreground: #55718a;
+  --accent: #00d4e6;
+  --accent-foreground: #0b1f3a;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #ffffff;
-  --border: #cfeae6;
-  --input: #b9ded9;
+  --border: #c9e5ee;
+  --input: #afd5e2;
   --ring: var(--brand-teal);
 
-  --shadow-soft: 0 1px 2px rgb(7 59 69 / 0.06), 0 12px 32px -12px rgb(7 59 69 / 0.16);
-  --shadow-lift: 0 2px 4px rgb(7 59 69 / 0.08), 0 28px 60px -24px rgb(7 59 69 / 0.3);
+  --shadow-soft: 0 1px 2px rgb(11 31 58 / 0.06), 0 12px 32px -12px rgb(11 31 58 / 0.16);
+  --shadow-lift: 0 2px 4px rgb(11 31 58 / 0.08), 0 28px 60px -24px rgb(11 31 58 / 0.3);
 }
 
 @layer base {

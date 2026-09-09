@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone } from "lucide-react";
-import logo from "@/assets/logo.png.asset.json";
 import { company, nav } from "@/lib/site";
 import { ButtonLink } from "./Button";
 
@@ -14,7 +13,7 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_0.7fr_1.2fr]">
           <div className="max-w-sm">
             <img
-              src={logo.url}
+              src="/filament-logo-transparent.png"
               alt={`${company.name} logo`}
               width={740}
               height={270}
