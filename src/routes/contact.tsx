@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Mail, Phone } from "lucide-react";
 import { z } from "zod";
-import bannerContact from "@/assets/banner-contact.webp";
 import ctaContact from "@/assets/cta-contact.webp";
 import { EnquiryForm } from "@/components/site/EnquiryForm";
 import { LocationCards } from "@/components/site/LocationCards";
@@ -44,8 +43,8 @@ function Contact() {
   return (
     <>
       <PageBanner
-        image={bannerContact}
-        alt="Modern pharmaceutical quality control laboratory"
+        image="/contact-animal-health.png"
+        alt="Golden retriever and dairy calf in a modern veterinary research facility"
         eyebrow="Contact"
         title="Let's Build Better Life-Science Solutions Together"
         intro="Send us a product or business enquiry — our team responds by email."
