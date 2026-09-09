@@ -76,9 +76,8 @@ export function HeroSlider() {
                 decoding="async"
                 width={1920}
                 height={1080}
-                className={`size-full object-cover ${i === 2 ? "hero-powder-red" : ""}`}
+                className="size-full object-cover"
               />
-              {i === 2 && <div className="hero-powder-tint absolute inset-0" aria-hidden="true" />}
               <div className="image-scrim-left absolute inset-0" aria-hidden="true" />
             </div>
           ))}
