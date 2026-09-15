@@ -52,7 +52,7 @@
 :root {
   --radius: 0.875rem;
 
-  --ink: #0057b8;
+  --ink: #00b8c8;
   --ink-deep: #003da5;
   --ink-muted: #2d7fb8;
   --brand-teal: #00b8c8;
@@ -65,7 +65,7 @@
   --card-foreground: var(--ink);
   --popover: #ffffff;
   --popover-foreground: var(--ink);
-  --primary: #0057b8;
+  --primary: #00b8c8;
   --primary-foreground: #ffffff;
   --secondary: #00b8c8;
   --secondary-foreground: #ffffff;
