@@ -6,8 +6,8 @@
 
 /*
  * FILAMENT LIFESCIENCES — design system
- * Brand palette: deep royal blue #0057B8, cyan #00B8C8,
- * dark blue #003DA5, and very light blue surfaces #F4F9FC.
+ * Brand palette: signature teal #00B8C8, deep teal #007A86,
+ * and very light teal surfaces #F2FBFC.
  */
 
 @theme inline {
@@ -53,11 +53,11 @@
   --radius: 0.875rem;
 
   --ink: #00b8c8;
-  --ink-deep: #003da5;
-  --ink-muted: #2d7fb8;
+  --ink-deep: #007a86;
+  --ink-muted: #168d98;
   --brand-teal: #00b8c8;
-  --mint: #f4f9fc;
-  --surface: #f4f9fc;
+  --mint: #f2fbfc;
+  --surface: #f2fbfc;
 
   --background: #ffffff;
   --foreground: var(--ink);
@@ -69,14 +69,14 @@
   --primary-foreground: #ffffff;
   --secondary: #00b8c8;
   --secondary-foreground: #ffffff;
-  --muted: #eef7fb;
-  --muted-foreground: #55718a;
+  --muted: #e8f8fa;
+  --muted-foreground: #4d747a;
   --accent: #00d4e6;
-  --accent-foreground: #003da5;
+  --accent-foreground: #007a86;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #ffffff;
-  --border: #c9e5ee;
-  --input: #afd5e2;
+  --border: #bfe5e9;
+  --input: #a8d9df;
   --ring: var(--brand-teal);
 
   --shadow-soft: 0 1px 2px rgb(0 61 165 / 0.06), 0 12px 32px -12px rgb(0 61 165 / 0.16);
