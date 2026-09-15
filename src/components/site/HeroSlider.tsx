@@ -78,7 +78,6 @@ export function HeroSlider() {
                 height={1080}
                 className="size-full object-cover"
               />
-              <div className="image-scrim-left absolute inset-0" aria-hidden="true" />
             </div>
           ))}
         </motion.div>

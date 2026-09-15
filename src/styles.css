@@ -188,35 +188,6 @@
   background-size: 72px 72px;
 }
 
-@utility image-scrim-left {
-  background: linear-gradient(
-    90deg,
-    color-mix(in srgb, var(--ink-deep) 88%, transparent) 0%,
-    color-mix(in srgb, var(--ink-deep) 62%, transparent) 38%,
-    color-mix(in srgb, var(--ink-deep) 10%, transparent) 72%,
-    transparent 100%
-  );
-}
-
-@utility image-scrim-vertical {
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--ink-deep) 55%, transparent) 0%,
-    color-mix(in srgb, var(--ink-deep) 20%, transparent) 45%,
-    color-mix(in srgb, var(--ink-deep) 85%, transparent) 100%
-  );
-}
-
-@utility image-scrim-right {
-  background: linear-gradient(
-    90deg,
-    color-mix(in srgb, var(--ink-deep) 86%, transparent) 0%,
-    color-mix(in srgb, var(--ink-deep) 55%, transparent) 45%,
-    color-mix(in srgb, var(--ink-deep) 5%, transparent) 85%,
-    transparent 100%
-  );
-}
-
 @utility hairline-top {
   border-top: 1px solid oklch(1 0 0 / 0.1);
 }
