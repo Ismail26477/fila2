@@ -15,6 +15,7 @@ export function CtaBanner({ image, alt, title, text }: CtaBannerProps) {
         src={image}
         alt={alt}
         loading="lazy"
+        decoding="async"
         width={1920}
         height={640}
         className="absolute inset-0 size-full object-cover"

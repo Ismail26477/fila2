@@ -100,6 +100,7 @@ function About() {
                 src={aboutTeam}
                 alt="Two research scientists reviewing laboratory data on a monitor"
                 loading="lazy"
+                decoding="async"
                 width={1200}
                 height={1504}
                 className="aspect-4/5 w-full object-cover"

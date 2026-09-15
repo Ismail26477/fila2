@@ -18,6 +18,7 @@ export function Footer() {
               width={740}
               height={270}
               loading="lazy"
+              decoding="async"
               className="h-11 w-auto"
             />
             <p className="mt-6 text-sm leading-relaxed text-primary-foreground/70">
