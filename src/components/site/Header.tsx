@@ -32,14 +32,23 @@ export function Header() {
       )}
     >
       <div className="container-x flex h-18 items-center justify-between gap-4 py-3 md:h-20">
-        <Link to="/" className="flex min-w-0 items-center" aria-label={`${company.name} — home`}>
-          <img
-            src="/filament-logo-transparent.png"
-            alt={`${company.name} logo`}
-            width={740}
-            height={270}
-            className="h-9 w-auto md:h-11"
-          />
+        <Link
+          to="/"
+          className="group relative flex min-w-0 items-center drop-shadow-[0_2px_8px_rgba(0,0,0,0.15)] transition-transform duration-200 hover:scale-[1.05]"
+          aria-label={`${company.name} — home`}
+        >
+          <span className="relative block h-9 w-9 shrink-0 overflow-hidden md:h-11 md:w-11" aria-hidden="true">
+            <img
+              src="/filament-logo-transparent.png"
+              alt=""
+              width={740}
+              height={270}
+              className="absolute top-0 left-0 h-9 w-auto max-w-none md:h-11"
+            />
+          </span>
+          <span className="ml-2 text-[0.55rem] leading-[0.95] font-extrabold tracking-[0.08em] text-white uppercase sm:text-[0.65rem] md:ml-3 md:text-[0.78rem]">
+            Filament Lifesciences Pvt Ltd
+          </span>
         </Link>
 
         <nav aria-label="Primary" className="hidden items-center gap-1 lg:flex">
