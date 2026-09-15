@@ -100,6 +100,11 @@
     overflow-x: hidden;
   }
 
+  img {
+    filter: none;
+    backdrop-filter: none;
+  }
+
   h1,
   h2,
   h3,
