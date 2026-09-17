@@ -52,19 +52,19 @@
 :root {
   --radius: 0.875rem;
 
-  --ink: #00b8c8;
-  --ink-deep: #007a86;
-  --ink-muted: #168d98;
+  --ink: #111111;
+  --ink-deep: #062b33;
+  --ink-muted: #3f5559;
   --brand-teal: #00b8c8;
   --mint: #f2fbfc;
   --surface: #f2fbfc;
 
   --background: #ffffff;
-  --foreground: var(--ink);
+  --foreground: #111111;
   --card: #ffffff;
-  --card-foreground: var(--ink);
+  --card-foreground: #111111;
   --popover: #ffffff;
-  --popover-foreground: var(--ink);
+  --popover-foreground: #111111;
   --primary: #00b8c8;
   --primary-foreground: #ffffff;
   --secondary: #00b8c8;
