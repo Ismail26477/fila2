@@ -1,5 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Beaker, FlaskConical, ShieldCheck, Target } from "lucide-react";
+import ctaHome from "@/assets/cta-home.webp";
+import homeAbout from "@/assets/home-about.webp";
+import homeSupport from "@/assets/home-support.webp";
 import { ButtonLink } from "@/components/site/Button";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { HeroSlider } from "@/components/site/HeroSlider";
@@ -88,7 +91,7 @@ function Home() {
           <Reveal className="relative">
             <div className="overflow-hidden rounded-3xl">
               <img
-                src="/images/home-village-community.png"
+                src={homeAbout}
                 alt="Filament Lifesciences scientist in a branded lab coat inside a modern laboratory"
                 loading="lazy"
                 decoding="async"
@@ -270,7 +273,7 @@ function Home() {
           <Reveal delay={0.1} className="lg:pt-16">
             <div className="overflow-hidden rounded-3xl">
               <img
-                src="/images/quality-lab.png"
+                src={homeSupport}
                 alt="Technician in a branded apron inspecting stainless steel process equipment"
                 loading="lazy"
                 decoding="async"
@@ -305,7 +308,7 @@ function Home() {
       </section>
 
       <CtaBanner
-        image="/images/hero-village-factory.png"
+        image={ctaHome}
         alt="Illuminated pharmaceutical manufacturing plant at night"
       />
     </>
