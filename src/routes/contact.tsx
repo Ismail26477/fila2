@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Mail, Phone } from "lucide-react";
 import { z } from "zod";
-import ctaContact from "@/assets/cta-contact.webp";
+import ctaContact from "@/assets/banner-contact.png";
 import { EnquiryForm } from "@/components/site/EnquiryForm";
 import { LocationCards } from "@/components/site/LocationCards";
 import { PageBanner } from "@/components/site/PageBanner";
