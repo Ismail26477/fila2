@@ -1,7 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import bannerAbout from "@/assets/banner-about.webp";
-import aboutTeam from "@/assets/about-team.webp";
-import ctaAbout from "@/assets/cta-about.webp";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { LocationCards } from "@/components/site/LocationCards";
 import { PageBanner } from "@/components/site/PageBanner";
@@ -32,7 +29,7 @@ function About() {
   return (
     <>
       <PageBanner
-        image={bannerAbout}
+        image="/images/about-village-team.png"
         alt="Modern pharmaceutical manufacturing facility exterior at dusk"
         eyebrow="Company"
         title="About Filament Lifesciences"
@@ -97,7 +94,7 @@ function About() {
           <Reveal delay={0.1} className="lg:pt-10">
             <div className="overflow-hidden rounded-3xl">
               <img
-                src={aboutTeam}
+                src="/images/about-village-team.png"
                 alt="Two research scientists reviewing laboratory data on a monitor"
                 loading="lazy"
                 decoding="async"
@@ -175,7 +172,7 @@ function About() {
       </section>
 
       <CtaBanner
-        image={ctaAbout}
+        image="/images/contact-facility.png"
         alt="Pharmaceutical manufacturing facility exterior in warm evening light"
       />
     </>

@@ -1,14 +1,10 @@
 import { motion, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
-import hero1 from "@/assets/hero-1-plant.webp";
-import hero2 from "@/assets/hero-2-qc.webp";
-import hero3 from "@/assets/hero-3-glassware.webp";
-import hero4 from "@/assets/hero-4-facility.webp";
 import { ButtonLink } from "./Button";
 
 const slides = [
   {
-    image: hero1,
+    image: "/images/hero-village-factory.png",
     eyebrow: "Life Sciences · India",
     title: "Advancing Life Sciences Through Precision & Innovation",
     highlight: "Precision & Innovation",
@@ -16,7 +12,7 @@ const slides = [
     alt: "Filament Lifesciences technicians in branded lab coats beside stainless steel API reactors",
   },
   {
-    image: hero2,
+    image: "/images/quality-lab.png",
     eyebrow: "Quality Culture",
     title: "Precision in Every Molecule",
     highlight: "Every Molecule",
@@ -24,7 +20,7 @@ const slides = [
     alt: "Filament Lifesciences scientist in a branded lab coat inspecting a sample vial",
   },
   {
-    image: hero3,
+    image: "/images/services-machinery.png",
     eyebrow: "Scientific Approach",
     title: "Science That Builds Trust",
     highlight: "Builds Trust",
@@ -32,7 +28,7 @@ const slides = [
     alt: "Laboratory glassware and vials with crystalline chemical powder",
   },
   {
-    image: hero4,
+    image: "/images/contact-facility.png",
     eyebrow: "Indian Manufacturing",
     title: "Quality Driven. Future Focused.",
     highlight: "Future Focused.",

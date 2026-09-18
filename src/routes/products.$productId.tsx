@@ -153,7 +153,7 @@ function ProductDetail() {
       )}
 
       <CtaBanner
-        image={ctaProducts}
+        image="/images/services-machinery.png"
         alt="Sealed drums of active pharmaceutical ingredients in a warehouse"
       />
     </>

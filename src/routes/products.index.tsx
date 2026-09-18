@@ -51,7 +51,7 @@ function Products() {
   return (
     <>
       <PageBanner
-        image={bannerProducts}
+        image="/images/quality-lab.png"
         alt="Laboratory glassware, vials and crystalline chemical powder"
         eyebrow="Portfolio"
         title="Our Products"
@@ -129,7 +129,7 @@ function Products() {
       </section>
 
       <CtaBanner
-        image={ctaProducts}
+        image="/images/services-machinery.png"
         alt="Sealed drums of active pharmaceutical ingredients in a warehouse"
       />
     </>

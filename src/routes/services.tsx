@@ -1,10 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import bannerServices from "@/assets/banner-services.webp";
-import ctaServices from "@/assets/cta-services.webp";
-import service1 from "@/assets/service-1.webp";
-import service2 from "@/assets/service-2.webp";
-import service3 from "@/assets/service-3.webp";
-import service4 from "@/assets/service-4.webp";
 import { ButtonLink } from "@/components/site/Button";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { Faq } from "@/components/site/Faq";
@@ -35,7 +29,7 @@ const services = [
   {
     no: "01",
     title: "API & Intermediate Solutions",
-    image: service1,
+    image: "/images/services-machinery.png",
     alt: "Stainless steel reactors in a pharmaceutical manufacturing plant",
     text: "Supply of active pharmaceutical ingredients and intermediates from our published portfolio, with product identification by CAS number and application.",
     points: [
@@ -47,7 +41,7 @@ const services = [
   {
     no: "02",
     title: "Product & Application Support",
-    image: service2,
+    image: "/images/quality-lab.png",
     alt: "Laboratory glassware and sample vials",
     text: "Support for evaluation teams that need clarity on a product before commercial discussions begin — identification, intended application and handling considerations.",
     points: [
@@ -59,7 +53,7 @@ const services = [
   {
     no: "03",
     title: "Quality-Focused Operations",
-    image: service3,
+    image: "/images/hero-village-factory.png",
     alt: "Technician recording batch details beside process equipment",
     text: "Our operating approach places process discipline and record-keeping at the centre of manufacturing, so output remains consistent from batch to batch.",
     points: [
@@ -71,7 +65,7 @@ const services = [
   {
     no: "04",
     title: "Scientific & Technical Support",
-    image: service4,
+    image: "/images/about-village-team.png",
     alt: "Scientist examining a sample in a quality control laboratory",
     text: "Direct access to our technical team for chemistry-led discussion around the products we supply and how they fit into your process.",
     points: [
@@ -86,7 +80,7 @@ function Services() {
   return (
     <>
       <PageBanner
-        image={bannerServices}
+        image="/images/services-machinery.png"
         alt="Filament Lifesciences technicians in branded lab coats working in a quality control laboratory"
         eyebrow="Capabilities"
         title="Services"
@@ -165,7 +159,7 @@ function Services() {
       <Faq />
 
       <CtaBanner
-        image={ctaServices}
+        image="/images/quality-lab.png"
         alt="Analytical instruments lined up in a bright quality control laboratory"
       />
     </>

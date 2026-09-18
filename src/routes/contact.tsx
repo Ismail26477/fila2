@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Mail, Phone } from "lucide-react";
 import { z } from "zod";
-import ctaContact from "@/assets/cta-contact.webp";
 import { EnquiryForm } from "@/components/site/EnquiryForm";
 import { LocationCards } from "@/components/site/LocationCards";
 import { PageBanner } from "@/components/site/PageBanner";
@@ -43,7 +42,7 @@ function Contact() {
   return (
     <>
       <PageBanner
-        image="/contact-animal-health.png"
+        image="/images/contact-facility.png"
         alt="Golden retriever and dairy calf in a modern veterinary research facility"
         eyebrow="Contact"
         title="Let's Build Better Life-Science Solutions Together"
