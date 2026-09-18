@@ -32,13 +32,18 @@ export function Header() {
       )}
     >
       <div className="container-x flex h-18 items-center justify-between gap-4 py-3 md:h-20">
-        <Link to="/" className="flex min-w-0 items-center" aria-label={`${company.name} — home`}>
+        
+        <Link
+          to="/"
+          className="flex min-w-0 items-center"
+          aria-label={`${company.name} — home`}
+        >
           <img
             src="/filament-logo-transparent.png"
             alt={`${company.name} logo`}
             width={740}
             height={270}
-            className="h-9 w-auto md:h-11"
+            className="h-12 w-auto md:h-16 lg:h-18"
           />
         </Link>
 
@@ -57,9 +62,14 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <ButtonLink to="/contact" variant="light" className="hidden px-5 py-2.5 sm:inline-flex">
+          <ButtonLink
+            to="/contact"
+            variant="light"
+            className="hidden px-5 py-2.5 sm:inline-flex"
+          >
             Send Enquiry
           </ButtonLink>
+
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -78,10 +88,16 @@ export function Header() {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              duration: 0.4,
+              ease: [0.22, 1, 0.36, 1],
+            }}
             className="overflow-hidden border-t border-primary-foreground/10 bg-ink-deep lg:hidden"
           >
-            <nav aria-label="Mobile" className="container-x flex flex-col py-4">
+            <nav
+              aria-label="Mobile"
+              className="container-x flex flex-col py-4"
+            >
               {nav.map((item) => (
                 <Link
                   key={item.to}
@@ -92,7 +108,12 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
-              <ButtonLink to="/contact" variant="light" className="mt-5 w-full">
+
+              <ButtonLink
+                to="/contact"
+                variant="light"
+                className="mt-5 w-full"
+              >
                 Send Enquiry
               </ButtonLink>
             </nav>
