@@ -94,6 +94,7 @@ function Home() {
                 src={homeAbout}
                 alt="Filament Lifesciences scientist in a branded lab coat inside a modern laboratory"
                 loading="lazy"
+                decoding="async"
                 width={1200}
                 height={1500}
                 className="aspect-4/5 w-full object-cover"
@@ -275,6 +276,7 @@ function Home() {
                 src={homeSupport}
                 alt="Technician in a branded apron inspecting stainless steel process equipment"
                 loading="lazy"
+                decoding="async"
                 width={1200}
                 height={1500}
                 className="aspect-4/5 w-full object-cover md:aspect-3/4"

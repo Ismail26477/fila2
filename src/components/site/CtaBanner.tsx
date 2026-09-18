@@ -15,12 +15,11 @@ export function CtaBanner({ image, alt, title, text }: CtaBannerProps) {
         src={image}
         alt={alt}
         loading="lazy"
+        decoding="async"
         width={1920}
         height={640}
         className="absolute inset-0 size-full object-cover"
       />
-      <div className="image-scrim-right absolute inset-0" aria-hidden="true" />
-
       <div className="container-x relative flex min-h-[30svh] items-center py-12 md:py-14">
         <Reveal className="max-w-2xl">
           <h2 className="text-xl leading-tight font-extrabold sm:text-3xl lg:text-4xl">

@@ -6,8 +6,8 @@
 
 /*
  * FILAMENT LIFESCIENCES — design system
- * Brand palette: deep royal blue #0057B8, cyan #00B8C8,
- * dark blue #003DA5, and very light blue surfaces #F4F9FC.
+ * Brand palette: signature teal #00B8C8, deep teal #007A86,
+ * and very light teal surfaces #F2FBFC.
  */
 
 @theme inline {
@@ -52,12 +52,12 @@
 :root {
   --radius: 0.875rem;
 
-  --ink: #0057b8;
-  --ink-deep: #003da5;
-  --ink-muted: #2d7fb8;
+  --ink: #00b8c8;
+  --ink-deep: #007a86;
+  --ink-muted: #168d98;
   --brand-teal: #00b8c8;
-  --mint: #f4f9fc;
-  --surface: #f4f9fc;
+  --mint: #f2fbfc;
+  --surface: #f2fbfc;
 
   --background: #ffffff;
   --foreground: var(--ink);
@@ -65,18 +65,18 @@
   --card-foreground: var(--ink);
   --popover: #ffffff;
   --popover-foreground: var(--ink);
-  --primary: #0057b8;
+  --primary: #00b8c8;
   --primary-foreground: #ffffff;
   --secondary: #00b8c8;
   --secondary-foreground: #ffffff;
-  --muted: #eef7fb;
-  --muted-foreground: #55718a;
+  --muted: #e8f8fa;
+  --muted-foreground: #4d747a;
   --accent: #00d4e6;
-  --accent-foreground: #003da5;
+  --accent-foreground: #007a86;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #ffffff;
-  --border: #c9e5ee;
-  --input: #afd5e2;
+  --border: #bfe5e9;
+  --input: #a8d9df;
   --ring: var(--brand-teal);
 
   --shadow-soft: 0 1px 2px rgb(0 61 165 / 0.06), 0 12px 32px -12px rgb(0 61 165 / 0.16);
@@ -98,6 +98,11 @@
     font-family: var(--font-sans);
     font-feature-settings: "cv11", "ss01";
     overflow-x: hidden;
+  }
+
+  img {
+    filter: none;
+    backdrop-filter: none;
   }
 
   h1,
@@ -181,35 +186,6 @@
     linear-gradient(to right, rgb(7 59 69 / 0.055) 1px, transparent 1px),
     linear-gradient(to bottom, rgb(7 59 69 / 0.055) 1px, transparent 1px);
   background-size: 72px 72px;
-}
-
-@utility image-scrim-left {
-  background: linear-gradient(
-    90deg,
-    color-mix(in srgb, var(--ink-deep) 88%, transparent) 0%,
-    color-mix(in srgb, var(--ink-deep) 62%, transparent) 38%,
-    color-mix(in srgb, var(--ink-deep) 10%, transparent) 72%,
-    transparent 100%
-  );
-}
-
-@utility image-scrim-vertical {
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--ink-deep) 55%, transparent) 0%,
-    color-mix(in srgb, var(--ink-deep) 20%, transparent) 45%,
-    color-mix(in srgb, var(--ink-deep) 85%, transparent) 100%
-  );
-}
-
-@utility image-scrim-right {
-  background: linear-gradient(
-    90deg,
-    color-mix(in srgb, var(--ink-deep) 86%, transparent) 0%,
-    color-mix(in srgb, var(--ink-deep) 55%, transparent) 45%,
-    color-mix(in srgb, var(--ink-deep) 5%, transparent) 85%,
-    transparent 100%
-  );
 }
 
 @utility hairline-top {

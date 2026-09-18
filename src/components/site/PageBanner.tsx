@@ -15,9 +15,10 @@ export function PageBanner({ image, alt, eyebrow, title, intro }: PageBannerProp
         className="absolute inset-0 size-full object-cover"
         width={1920}
         height={1080}
+        loading="eager"
+        fetchPriority="high"
+        decoding="async"
       />
-      <div className="image-scrim-vertical absolute inset-0" aria-hidden="true" />
-
       <div className="container-x relative flex h-full items-end pt-28 pb-12 md:pb-16">
         <div className="max-w-2xl">
           <p className="eyebrow-light">

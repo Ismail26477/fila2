@@ -15,6 +15,7 @@ export function ProductCard({ product }: { product: Product }) {
           src={product.image}
           alt={`${product.name} — active pharmaceutical ingredient visual`}
           loading="lazy"
+          decoding="async"
           width={1200}
           height={912}
           className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
