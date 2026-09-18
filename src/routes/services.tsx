@@ -1,10 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import bannerServices from "@/assets/banner-services.webp";
 import ctaServices from "@/assets/cta-services.webp";
-const service1 = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UgL1c1FzCLstpoaY730dUnrBIBgLOi.png";
-const service2 = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-e3UJk5zX2j2hvO7KYwTpj4otX1puxO.png";
-const service3 = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Kn3PDRN0942kL82HXleX4jSQ21HRjP.png";
-const service4 = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-rDwoJP8LgebfmUCo9MtpDe2o1vChgP.png";
+import service1 from "@/assets/service-1.webp";
+import service2 from "@/assets/service-2.webp";
+import service3 from "@/assets/service-3.webp";
+import service4 from "@/assets/service-4.webp";
 import { ButtonLink } from "@/components/site/Button";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { Faq } from "@/components/site/Faq";
