@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { company, nav } from "@/lib/site";
-import { ButtonLink } from "./Button";
 
 export function Footer() {
   return (
@@ -81,18 +80,6 @@ export function Footer() {
               </li>
             </ul>
           </div>
-        </div>
-
-        <div className="mt-14 grid gap-6 border-t border-primary-foreground/10 pt-10 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
-          <div className="min-w-0">
-            <p className="font-display text-xl font-semibold">Have a product enquiry?</p>
-            <p className="mt-1 text-sm text-primary-foreground/65">
-              Our team will respond with product and commercial details.
-            </p>
-          </div>
-          <ButtonLink to="/contact" variant="light">
-            Contact Us
-          </ButtonLink>
         </div>
 
         <p className="mt-10 text-xs text-primary-foreground/45">
