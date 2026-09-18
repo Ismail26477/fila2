@@ -1,104 +1,91 @@
-import { Link, useRouterState } from "@tanstack/react-router"; 
-import { AnimatePresence, motion } from "motion/react"; 
-import { Menu, X } from "lucide-react"; 
-import { useEffect, useState } from "react"; 
-import { company, nav } from "@/lib/site"; 
-import { cn } from "@/lib/utils"; 
-import { ButtonLink } from "./Button"; 
- 
-export function Header() { 
-  const [scrolled, setScrolled] = useState(false); 
-  const [open, setOpen] = useState(false); 
-  const pathname = useRouterState({ select: (s) => s.location.pathname }); 
- 
-  useEffect(() => { 
-    const onScroll = () => setScrolled(window.scrollY > 24); 
-    onScroll(); 
-    window.addEventListener("scroll", onScroll, { passive: true }); 
-    return () => window.removeEventListener("scroll", onScroll); 
-  }, []); 
- 
-  useEffect(() => setOpen(false), [pathname]); 
- 
-  const solid = scrolled; 
- 
-  return ( 
-    <header 
-      className={cn( 
-        "fixed inset-x-0 top-0 z-50 transition-all duration-500", 
-        solid 
-          ? "border-b border-primary-foreground/10 bg-ink-deep" 
-          : "border-b border-transparent bg-transparent", 
-      )} 
-    > 
-      <div className="container-x flex h-18 items-center justify-between gap-4 py-3 md:h-20"> 
-        <Link to="/" className="flex min-w-0 items-center" aria-label={`${company.name} — home`}> 
-          <img 
-            src="/filament-logo-transparent.png" 
-            alt={`${company.name} logo`} 
-            width={740} 
-            height={270} 
-            className="h-9 w-auto md:h-11" 
-          /> 
-        </Link> 
- 
-        <nav aria-label="Primary" className="hidden items-center gap-1 lg:flex"> 
-          {nav.map((item) => ( 
-            <Link 
-              key={item.to} 
-              to={item.to} 
-              activeOptions={{ exact: item.to === "/" }} 
-              className="group relative px-4 py-2 text-sm font-medium text-primary-foreground/75 transition-colors hover:text-primary-foreground data-[status=active]:text-primary-foreground" 
-            > 
-              {item.label} 
-              <span className="absolute inset-x-4 -bottom-0.5 h-px scale-x-0 bg-brand-teal transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:scale-x-100" /> 
-            </Link> 
-          ))} 
-        </nav> 
- 
-        <div className="flex items-center gap-2"> 
-          <ButtonLink to="/contact" variant="light" className="hidden px-5 py-2.5 sm:inline-flex"> 
-            Send Enquiry 
-          </ButtonLink> 
-          <button 
-            type="button" 
-            onClick={() => setOpen((v) => !v)} 
-            aria-label={open ? "Close menu" : "Open menu"} 
-            aria-expanded={open} 
-            className="inline-flex size-11 items-center justify-center rounded-md border border-primary-foreground/20 text-primary-foreground lg:hidden" 
-          > 
-            {open ? <X className="size-5" /> : <Menu className="size-5" />} 
-          </button> 
-        </div> 
-      </div> 
- 
-      <AnimatePresence> 
-        {open && ( 
-          <motion.div 
-            initial={{ height: 0, opacity: 0 }} 
-            animate={{ height: "auto", opacity: 1 }} 
-            exit={{ height: 0, opacity: 0 }} 
-            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }} 
-            className="overflow-hidden border-t border-primary-foreground/10 bg-ink-deep lg:hidden" 
-          > 
-            <nav aria-label="Mobile" className="container-x flex flex-col py-4"> 
-              {nav.map((item) => ( 
-                <Link 
-                  key={item.to} 
-                  to={item.to} 
-                  activeOptions={{ exact: item.to === "/" }} 
-                  className="border-b border-primary-foreground/8 py-4 text-base font-medium text-primary-foreground/80 data-[status=active]:text-primary-foreground" 
-                > 
-                  {item.label} 
-                </Link> 
-              ))} 
-              <ButtonLink to="/contact" variant="light" className="mt-5 w-full"> 
-                Send Enquiry 
-              </ButtonLink> 
-            </nav> 
-          </motion.div> 
-        )} 
-      </AnimatePresence> 
-    </header> 
-  ); 
-},
+import { Link } from "@tanstack/react-router";
+import { Mail, MapPin, Phone } from "lucide-react";
+import { company, nav } from "@/lib/site";
+
+export function Footer() {
+  return (
+    <footer className="relative overflow-hidden bg-ink-deep text-primary-foreground">
+      <div className="pointer-events-none absolute inset-0 grid-lines opacity-40" aria-hidden="true" />
+      <div className="pointer-events-none absolute -top-24 right-0 size-96 opacity-40" aria-hidden="true" />
+
+      <div className="container-x relative py-16 md:py-20">
+        <div className="grid gap-12 lg:grid-cols-[1.4fr_0.7fr_1.2fr]">
+          <div className="max-w-sm">
+            <img
+              src="/filament-logo-transparent.png"
+              alt={`${company.name} logo`}
+              width={740}
+              height={270}
+              loading="lazy"
+              decoding="async"
+              className="h-11 w-auto"
+            />
+            <p className="mt-6 text-sm leading-relaxed text-primary-foreground/70">
+              {company.name} is an Indian life-sciences company focused on active pharmaceutical
+              ingredients and intermediates, built around scientific precision and dependable
+              quality practices.
+            </p>
+            <p className="mt-6 text-xs tracking-wide text-primary-foreground/50">
+              Founded {company.foundedYear} · CIN: {company.cin}
+            </p>
+          </div>
+
+          <nav aria-label="Footer">
+            <h2 className="eyebrow-light">Quick Links</h2>
+            <ul className="mt-6 space-y-3">
+              {nav.map((item) => (
+                <li key={item.to}>
+                  <Link
+                    to={item.to}
+                    className="text-sm text-primary-foreground/70 transition-colors hover:text-primary-foreground"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div>
+            <h2 className="eyebrow-light">Contact</h2>
+            <ul className="mt-6 space-y-6 text-sm text-primary-foreground/70">
+              {[company.registeredOffice, company.factory].map((place) => (
+                <li key={place.label} className="flex gap-3">
+                  <MapPin className="mt-0.5 size-4 shrink-0 text-brand-teal" aria-hidden="true" />
+                  <span>
+                    <span className="block text-xs font-semibold tracking-widest text-primary-foreground/50 uppercase">
+                      {place.label}
+                    </span>
+                    <span className="mt-1 block leading-relaxed">{place.lines.join(" ")}</span>
+                  </span>
+                </li>
+              ))}
+              <li className="flex gap-3">
+                <Phone className="mt-0.5 size-4 shrink-0 text-brand-teal" aria-hidden="true" />
+                <a
+                  href={`tel:+91${company.phone}`}
+                  className="transition-colors hover:text-primary-foreground"
+                >
+                  +91 {company.phone}
+                </a>
+              </li>
+              <li className="flex gap-3">
+                <Mail className="mt-0.5 size-4 shrink-0 text-brand-teal" aria-hidden="true" />
+                <a
+                  href={`mailto:${company.email}`}
+                  className="break-all transition-colors hover:text-primary-foreground"
+                >
+                  {company.email}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p className="mt-10 text-xs text-primary-foreground/45">
+          © 2026 {company.name}. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  );
+}
