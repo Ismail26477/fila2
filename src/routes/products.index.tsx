@@ -66,9 +66,6 @@ function Products() {
                 <span className="h-px w-8 bg-brand-teal" aria-hidden="true" />
                 Catalogue
               </p>
-              <h2 className="mt-5 text-2xl font-extrabold text-ink sm:text-3xl">
-                {filtered.length} {filtered.length === 1 ? "product" : "products"}
-              </h2>
             </div>
 
             <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-center lg:w-auto">
