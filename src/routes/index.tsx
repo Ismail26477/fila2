@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Beaker, FlaskConical, ShieldCheck, Target } from "lucide-react";
 import ctaHome from "@/assets/cta-home.webp";
-import homeAbout from "@/assets/home-about.webp";
-import homeSupport from "@/assets/home-support.webp";
+const homeAbout = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-12B945C97cVNPAGzbCvWSnyzMy9JDl.png";
+const homeSupport = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UgL1c1FzCLstpoaY730dUnrBIBgLOi.png";
 import { ButtonLink } from "@/components/site/Button";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { HeroSlider } from "@/components/site/HeroSlider";

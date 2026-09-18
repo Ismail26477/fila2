@@ -1,9 +1,9 @@
 import { motion, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
-import hero1 from "@/assets/hero-1-plant.webp";
-import hero2 from "@/assets/hero-2-qc.webp";
-import hero3 from "@/assets/hero-3-glassware.webp";
-import hero4 from "@/assets/hero-4-facility.webp";
+const hero1 = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-uk98LZOH5tIqmql5v5aMuszMyo3QXs.png";
+const hero2 = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-12B945C97cVNPAGzbCvWSnyzMy9JDl.png";
+const hero3 = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-rWsKlTO1We6INpYDyNGuFierVwwv6r.png";
+const hero4 = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-z7BEzhuWiD6CE1v5QslJfepDqIx5Yh.png";
 import { ButtonLink } from "./Button";
 
 const slides = [

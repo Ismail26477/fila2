@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import bannerAbout from "@/assets/banner-about.webp";
-import aboutTeam from "@/assets/about-team.webp";
+const aboutTeam = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-z7BEzhuWiD6CE1v5QslJfepDqIx5Yh.png";
 import ctaAbout from "@/assets/cta-about.webp";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { LocationCards } from "@/components/site/LocationCards";
