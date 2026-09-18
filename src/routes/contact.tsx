@@ -38,7 +38,7 @@ function Contact() {
   const mapQuery = company.factory.mapQuery;
   const embedSrc = mapsEmbedKey
     ? `https://www.google.com/maps/embed/v1/place?key=${mapsEmbedKey}&q=${encodeURIComponent(mapQuery)}`
-    : "";
+    : `https://www.google.com/maps?q=${encodeURIComponent(mapQuery)}&output=embed`;
 
   return (
     <>
