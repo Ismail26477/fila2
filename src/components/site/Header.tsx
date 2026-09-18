@@ -20,7 +20,7 @@ export function Header() {
 
   useEffect(() => setOpen(false), [pathname]);
 
-  const solid = scrolled || pathname !== "/";
+  const solid = scrolled;
 
   return (
     <header
