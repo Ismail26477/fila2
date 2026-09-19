@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
-import hero1 from "@/assets/hero-1-plant.png";
+import hero1 from "@/assets/hero-1-plant.webp";
 import hero2 from "@/assets/hero-2-qc.webp";
 import hero3 from "@/assets/hero-3-glassware.webp";
 import hero4 from "@/assets/hero-4-facility.webp";

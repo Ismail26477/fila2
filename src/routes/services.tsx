@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import bannerServices from "@/assets/banner-services.png";
+import bannerServices from "@/assets/banner-services.webp";
 import ctaServices from "@/assets/cta-services.webp";
 import service1 from "@/assets/service-1.webp";
 import service2 from "@/assets/service-2.webp";
