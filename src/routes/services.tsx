@@ -5,7 +5,6 @@ import service1 from "@/assets/service-1.webp";
 import service2 from "@/assets/service-2.webp";
 import service3 from "@/assets/service-3.webp";
 import service4 from "@/assets/service-4.webp";
-import { ButtonLink } from "@/components/site/Button";
 import { CtaBanner } from "@/components/site/CtaBanner";
 import { Faq } from "@/components/site/Faq";
 import { PageBanner } from "@/components/site/PageBanner";
@@ -144,23 +143,6 @@ function Services() {
           </section>
         ))}
       </div>
-
-      <section className="bg-surface pb-20 md:pb-28">
-        <div className="container-x rounded-3xl border border-border bg-card p-9 shadow-soft md:p-12">
-          <Reveal className="grid gap-6 md:grid-cols-[minmax(0,1fr)_auto] md:items-center">
-            <div className="min-w-0">
-              <h2 className="font-display text-2xl font-bold text-ink">
-                Need something not listed here?
-              </h2>
-              <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink-muted">
-                Service information is being expanded. Send us your requirement and we will tell you
-                honestly what we can support today.
-              </p>
-            </div>
-            <ButtonLink to="/contact">Request an Enquiry</ButtonLink>
-          </Reveal>
-        </div>
-      </section>
 
       <Faq />
 

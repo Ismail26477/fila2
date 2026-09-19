@@ -118,12 +118,6 @@ function Contact() {
                 <p className="mt-2 text-ink">{company.foundedYear}</p>
               </div>
 
-              <div>
-                <h3 className="text-xs font-semibold tracking-[0.2em] text-ink-muted uppercase">
-                  CIN
-                </h3>
-                <p className="mt-2 text-ink">{company.cin}</p>
-              </div>
             </div>
           </Reveal>
 

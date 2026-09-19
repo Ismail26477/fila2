@@ -70,27 +70,6 @@ function About() {
                   will be published here as it becomes available.
                 </p>
               </div>
-              <dl className="mt-10 grid gap-6 border-t border-border pt-8 sm:grid-cols-2">
-                <div>
-                  <dt className="text-xs font-semibold tracking-[0.2em] text-ink-muted uppercase">
-                    Corporate Identity Number
-                  </dt>
-                  <dd className="mt-2 font-display text-lg font-bold text-ink">{company.cin}</dd>
-                </div>
-                <div>
-                  <dt className="text-xs font-semibold tracking-[0.2em] text-ink-muted uppercase">
-                    Email
-                  </dt>
-                  <dd className="mt-2">
-                    <a
-                      href={`mailto:${company.email}`}
-                      className="font-display text-lg font-bold break-all text-ink hover:text-ink-muted"
-                    >
-                      {company.email}
-                    </a>
-                  </dd>
-                </div>
-              </dl>
             </Reveal>
           </div>
 
