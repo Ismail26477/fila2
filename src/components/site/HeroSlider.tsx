@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import hero1 from "@/assets/hero-1-plant.webp";
 import hero2 from "@/assets/hero-2-qc.webp";
 import hero3 from "@/assets/hero-3-glassware.webp";
-import hero4 from "@/assets/hero-4-facility.webp";
 import { ButtonLink } from "./Button";
 
 const slides = [
@@ -30,14 +29,6 @@ const slides = [
     highlight: "Builds Trust",
     text: "We work with our customers as technical partners, sharing data, documentation and clarity at every step.",
     alt: "Laboratory glassware and vials with crystalline chemical powder",
-  },
-  {
-    image: hero4,
-    eyebrow: "Indian Manufacturing",
-    title: "Quality Driven. Future Focused.",
-    highlight: "Future Focused.",
-    text: "Our manufacturing base in Kotdwar, Uttarakhand anchors a long-term commitment to consistent supply.",
-    alt: "Modern pharmaceutical manufacturing facility exterior at golden hour",
   },
 ];
 
