@@ -1,6 +1,6 @@
-import product1 from "@/assets/product-1.webp";
-import product2 from "@/assets/product-2.webp";
-import product3 from "@/assets/product-3.webp";
+const product1 = "/images/isometamedium-chloride-hcl.png";
+const product2 = "/images/homidium-bromide.png";
+const product3 = "/images/homidium-chloride.png";
 
 export type ProductCategory = "APIs & Intermediates";
 
