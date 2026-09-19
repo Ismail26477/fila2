@@ -20,7 +20,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Contact Filament Lifesciences Pvt Ltd — registered office in Nagpur, Maharashtra, factory at IIE Growth Centre Sigaddi, Kotdwar, Uttarakhand. Email filamentlifescience@gmail.com or send an enquiry.",
+          "Contact Filament Lifesciences Pvt Ltd — registered office in Nagpur, Maharashtra, factory at IIE Growth Centre Sigaddi, Kotdwar, Uttarakhand. Email info@filamentlifesciences.com or send an enquiry.",
       },
       { property: "og:title", content: "Contact Us | Filament Lifesciences Pvt Ltd" },
       {

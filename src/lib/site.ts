@@ -7,7 +7,7 @@ export const company = {
   name: "Filament Lifesciences Pvt Ltd",
   shortName: "Filament Lifesciences",
   cin: "U21000MH2025PTC452237",
-  email: "filamentlifescience@gmail.com",
+  email: "info@filamentlifesciences.com",
   phone: "9096464815",
   foundedYear: "2025",
   registeredOffice: {
