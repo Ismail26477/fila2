@@ -49,7 +49,7 @@ export function LocationCards({ variant = "light" }: { variant?: "light" | "dark
             ))}
           </address>
           <a
-            href={mapsLink(card.mapQuery)}
+            href={card.mapUrl ?? mapsLink(card.mapQuery)}
             target="_blank"
             rel="noopener noreferrer"
             className={

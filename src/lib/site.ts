@@ -23,11 +23,12 @@ export const company = {
   factory: {
     label: "Factory Address",
     lines: [
-      "A5B, IIE Growth Centre Sigaddi,",
-      "Sidcul, Kotdwar, Pauri Garhwal,",
-      "Uttarakhand-246149",
+      "Sigaddi Growth Centre, Building No./Flat No.: A5B",
+      "IIE Growth Center, SIDCUL, Kotadwara,",
+      "Uttarakhand 246149",
     ],
-    mapQuery: "IIE Growth Centre Sigaddi, Sidcul, Kotdwar, Pauri Garhwal, Uttarakhand 246149",
+    mapQuery: "Sigaddi Growth Centre, Building No./Flat No.: A5B, IIE Growth Center, SIDCUL, Kotadwara, Uttarakhand 246149",
+    mapUrl: "https://maps.app.goo.gl/NU5AGEYMRn3xVsXd9?g_st=iwb",
   },
 } as const;
 

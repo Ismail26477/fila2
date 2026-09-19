@@ -76,7 +76,7 @@ function Contact() {
                     ))}
                   </address>
                   <a
-                    href={mapsLink(place.mapQuery)}
+                    href={place.mapUrl ?? mapsLink(place.mapQuery)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-2 inline-block text-xs font-semibold text-brand-teal hover:opacity-75"
@@ -148,7 +148,7 @@ function Contact() {
                   meantime, open our factory location directly in Google Maps.
                 </p>
                 <a
-                  href={mapsLink(mapQuery)}
+                  href={company.factory.mapUrl ?? mapsLink(mapQuery)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-md bg-ink px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-ink-muted"
