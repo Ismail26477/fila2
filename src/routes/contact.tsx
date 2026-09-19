@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Mail, Phone } from "lucide-react";
 import { z } from "zod";
-import bannerContact from "@/assets/banner-contact.webp";
 import ctaContact from "@/assets/cta-contact.webp";
 import { EnquiryForm } from "@/components/site/EnquiryForm";
 import { LocationCards } from "@/components/site/LocationCards";
@@ -44,7 +43,8 @@ function Contact() {
   return (
     <>
       <PageBanner
-image={bannerContact}
+        image="/images/contact-handshake-hero.png"
+
   alt="Filament Lifesciences team collaborating in a modern pharmaceutical laboratory"
         eyebrow="Contact"
         title="Let's Build Better Life-Science Solutions Together"
